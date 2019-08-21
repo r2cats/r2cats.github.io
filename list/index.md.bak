@@ -1,0 +1,13 @@
+---
+title: list
+date: 2019-08-19 21:57:07
+layout: list
+---
+<script type="text/javascript">      
+     var search_path = "<%= config.search.path %>";
+     if (search_path.length == 0) {
+     	search_path = "search.xml";
+     }
+     var path = "<%= config.root %>" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+</script>
